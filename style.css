@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+/* Global */
+html {
+  min-height: 100%;
+  overflow: hidden;
+  background: scroll;
+  overflow-y: scroll;
+}
+
+body {
+  background: scroll;
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Poppins";
+  background-color: rgb(25, 25, 25);
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32rem;
+  padding: 25px 25px;
+  margin-top: 1rem;
+}
+
+.photo:hover {
+  opacity: 5;
+  width: 200px;
+  height: 200px;
+  /* margin-right: 100px; */
+  background-color: rgb(25, 25, 25);
+  transition: all 0.35s ease-in-out;
+  background: white;
+  z-index: 999;
+}
+
+p {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+}
+
+/* Google Fonts */
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.button {
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-left: 16.9rem;
+  height: 8rem;
+  text-decoration: none;
+}
+
+.button1 {
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-left: 16.9rem;
+  height: 8rem;
+}
+
+.btn {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.btn:hover {
+  outline: groove;
+  font-size: 25.9px;
+  background-position: center;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  * {
+    background: scroll;
+    background-size: cover;
+  }
+  .photo {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+  }
+
+  .footer {
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  .btn {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 250px;
+    margin-left: 50px;
+  }
+  .button {
+    justify-content: center;
+    top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .button1 {
+    justify-content: center;
+    top: 20px;
+  }
+
+  .p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+  }
+}
